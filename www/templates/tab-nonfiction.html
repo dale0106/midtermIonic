@@ -1,0 +1,16 @@
+<!-- Non-fiction tab -->
+<!--
+<ion-tab title="Non-Fiction" icon-off="ion-ios-gear-outline" href="#/tab/nonfiction">
+	<ion-nav-view name="tab-non-fiction">
+		<h1 style="text-align:center">{{title}}</h1>
+		<h1>Hello</h1>
+	</ion-nav-view>
+</ion-tab>-->
+<ion-view view-title="Non-fiction">
+	<ion-content>
+		<h1 style='text-align:center' ng-repeat='book in nonFictionArray '>
+			{{book.title}}
+			<img src="{{book.image}}" alt="">
+			</h1>
+	</ion-content>
+</ion-view>
